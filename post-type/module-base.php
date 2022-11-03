@@ -850,7 +850,7 @@ class DT_Training_Base extends DT_Module_Base {
                 }
             }
 
-            if ( current_user_can( 'view_any_trainings' ) ) {
+            if ( current_user_can( 'access_trainings' ) ) {
                 $counts = self::get_all_trainings_status_type();
                 $active_counts = [];
                 $update_needed = 0;
